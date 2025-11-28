@@ -1,7 +1,7 @@
 [project]
 name = "ibm-ai-engineering"
 version = "0.1.0"
-description = "Add your description here"
+description = "Coursera IBM AI Engineering Professional Certificate"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
