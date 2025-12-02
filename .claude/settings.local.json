@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nRefactor dependency management and improve notebook setup\n\n- Remove problematic installation code from notebook\n- Move all dependency management to pyproject.toml and requirements.txt\n- Update torch/torchtext to compatible versions (2.2+ compatible)\n- Add comprehensive SETUP.md with troubleshooting guide\n- Replace installation code with clear setup instructions\n- Add fallback handling for torchtext in import cell\n\nChanges:\n  • pyproject.toml: Updated torch (>=2.2.0) and torchtext (>=0.18.0)\n  • requirements.txt: Added version constraints and comments\n  • Implementing Tokenization-v2.ipynb: Cleaned up setup, improved documentation\n  • SETUP.md: New comprehensive setup guide for all users\n\nThis approach is cleaner and allows proper dependency resolution without\ncluttering the notebook with installation logic.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []

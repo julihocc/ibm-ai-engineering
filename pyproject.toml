@@ -14,8 +14,18 @@ dependencies = [
     "pandas==2.2.3",
     "scikit-learn==1.6.0",
     "sentencepiece>=0.2.1",
-    "spacy>=3.8.11",
-    "torch>=2.9.1",
-    "torchtext>=0.18.0",
+    "spacy[models]>=3.8.11",
+    # torch and torchtext: ensure compatibility
+    # torch 2.2+ requires torchtext 0.18+
+    "torch>=2.2.0,<3.0.0",
+    "torchtext>=0.18.0,<1.0.0",
     "transformers==4.42.1",
+]
+
+[project.optional-dependencies]
+# Optional dependencies for specific use cases
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "flake8>=6.0",
 ]

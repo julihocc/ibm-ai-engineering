@@ -1,3 +1,4 @@
+# Core dependencies for IBM AI Engineering notebooks
 ipykernel>=7.1.0
 jupyter>=1.1.1
 matplotlib==3.9.3
@@ -8,6 +9,11 @@ pandas==2.2.3
 scikit-learn==1.6.0
 sentencepiece>=0.2.1
 spacy>=3.8.11
-torch>=2.9.1
-torchtext>=0.18.0
+
+# PyTorch dependencies - ensure version compatibility
+# torch 2.2+ is required for torchtext 0.18+
+torch>=2.2.0,<3.0.0
+torchtext>=0.18.0,<1.0.0
+
+# Transformers for pretrained models
 transformers==4.42.1
