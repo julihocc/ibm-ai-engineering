@@ -1,0 +1,13 @@
+ipykernel>=7.1.0
+jupyter>=1.1.1
+matplotlib==3.9.3
+nltk>=3.9.2
+notebook>=7.5.0
+numpy==1.26
+pandas==2.2.3
+scikit-learn==1.6.0
+sentencepiece>=0.2.1
+spacy>=3.8.11
+torch>=2.9.1
+torchtext>=0.18.0
+transformers==4.42.1
